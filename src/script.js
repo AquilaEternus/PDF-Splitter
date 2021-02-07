@@ -56,10 +56,10 @@ function mergePdf(file1Path, file2Path) {
         })
         .catch(err => {
             //console.log(err);
-            removeLoader();
+            removeSpinner();
             generateError("Failed to merge documents.", 'merge');
         });
-    removeLoader();
+    removeSpinner();
 }
 
 /**
