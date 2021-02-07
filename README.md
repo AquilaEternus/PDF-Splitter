@@ -13,4 +13,4 @@ This program uses electron-packager to create release builds for Windows, Linux,
 
 **For Linux**: *npm run package-linux*
 
-**For Linux**: *npm run package-mac*
+**For Mac**: *npm run package-mac*
