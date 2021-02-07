@@ -1,0 +1,26 @@
+{
+   "name": "pdf-splitter",
+   "version": "1.0.0",
+   "description": "Web app that splits a PDF document into seperate PDFs.",
+   "main": "app.js",
+   "scripts": {
+      "dev": "nodemon --exec babel-node app.js",
+      "start": "electron app.js",
+      "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+      "package-win": "electron-packager . PDF-Splitter --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PDF-Splitter\"",
+      "package-linux": "electron-packager . PDF-Splitter --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds",
+      "main": "app.js"
+   },
+   "author": "Jose Hernandez",
+   "license": "ISC",
+   "dependencies": {
+      "@babel/core": "^7.12.13",
+      "@babel/node": "^7.12.13",
+      "@babel/preset-env": "^7.12.13",
+      "electron": "^9.2.0",
+      "pdf-lib": "^1.9.0"
+   },
+   "devDependencies": {
+      "electron-packager": "^15.2.0"
+   }
+}

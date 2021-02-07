@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/materialize.css" />
+      <link rel="stylesheet" href="./css/custom.css" />
+      <title>PDF Splitter</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row zero-margin">
+            <div class="col s12">
+              <ul class="tabs black text-white">
+                <li class="tab col s3"><a href="#split">Split</a></li>
+                <li class="tab col s3"><a href="#merge">Merge</a></li>
+                <li class="tab col s3"><a href="#about">About</a></li>
+              </ul>
+            </div>
+            <div id="split" class="col s12">
+               <div id="splitError" class="error-banner"></div>
+               <div class="row">
+                  <form>
+                     <div class="file-field input-field">
+                        <div class="waves-effect btn">
+                           <span>PDF File</span>
+                           <input type="file" id="filePath">
+                        </div>
+                        <div class="file-path-wrapper">
+                           <input class="file-path validate" type="text">
+                        </div>
+                     </div>
+                     <div class="col s3"></div>
+                     <div class="input-field col s6">
+                        <input id="range" type="text" class="validate" placeholder="ex: 1-1;2-3;4-7;10-15">
+                        <label for="range">Range</label>
+                      </div>
+                      <div class="col s3"></div>
+                     <button id="splitBtn" class="waves-effect btn">Split</button>
+                  </form>
+               </div>    
+            </div>
+            <div id="merge" class="col s12">
+               <div id="mergeError" class="error-banner"></div>
+               <form>
+                  <div class="file-field input-field">
+                     <div class="waves-effect btn">
+                        <span>File 1</span>
+                        <input type="file" id="file1Path">
+                     </div>
+                     <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload start of merged PDF here.">
+                     </div>
+                  </div>
+                  <div class="file-field input-field">
+                     <div class="waves-effect btn">
+                        <span>File 2</span>
+                        <input type="file" id="file2Path">
+                     </div>
+                     <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload end of merged PDF here.">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col s5"></div>
+                     <div>
+                        <button id="mergeBtn" class="waves-effect btn col s2">Merge</button>
+                     </div>
+                     <div class="col s5"></div>
+                  </div>
+               </form>
+            </div>
+            <div id="about" class="col s12">
+               <div class="error"></div>
+               <div class="container">
+                  <div class="row">
+                     <h4 class="center-align">About PDF-Split</h4>
+                     <p>
+                        PDF-Split is a simple GUI tool for splitting PDF files by page ranges and/or 
+                        merging two PDF files together.
+                     </p>
+                     <p>
+                        Note: PDF-Split does not modify PDF files. All generated PDFs are copies of parts or wholes of inputted files.
+                     </p>
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
+         
+      <script src="./js/materialize.js"></script>
+      <script type="module" src="../src/script.js"></script>
+   </body>
+</html>

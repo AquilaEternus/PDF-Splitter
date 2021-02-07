@@ -1,0 +1,73 @@
+body {
+	/*background-color: #424242;
+   color: white;*/
+	margin: 0;
+	background-color: rgb(44, 44, 44);
+	color: black;
+	box-sizing: border-box;
+}
+
+.zero-margin {
+	/* margin: auto -1em; */
+}
+
+#split,
+#merge,
+#about {
+	margin: 1em 1em;
+	color: white;
+}
+
+.tabs .tab a {
+	background-color: rgb(30, 30, 30);
+	color: white !important;
+}
+
+.tab {
+	width: 33.333% !important;
+}
+.tabs .tab a:hover {
+	color: #26a69a;
+}
+
+.tabs .tab a:focus.active {
+	color: #26a69a;
+	background-color: rgba(38, 166, 154, 0.2);
+}
+
+.tabs .indicator {
+	background-color: #26a69a;
+}
+
+.input-field label {
+	color: white;
+}
+
+.input-field input[type="text"] {
+	width: 95%;
+}
+
+.input-field input[type="text"]:focus + label {
+	color: white;
+}
+
+.file-path,
+#range {
+	color: white;
+}
+
+.error-banner {
+	padding: 10px 20px;
+	background-color: rgb(255, 92, 92);
+	border: 1px solid rgb(255, 42, 42);
+	border-radius: 10px;
+	display: none;
+	color: white;
+}
+
+.error-banner.show {
+	display: block;
+	margin: 1em auto;
+	margin-right: 3.5em;
+	width: 90%;
+}
