@@ -1,7 +1,7 @@
 {
    "name": "pdf-splitter",
    "version": "1.0.0",
-   "description": "Web app that splits a PDF document into seperate PDFs.",
+   "description": "Desktop app that splits and merges PDF files.",
    "main": "app.js",
    "scripts": {
       "dev": "nodemon --exec babel-node app.js",
