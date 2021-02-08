@@ -42,45 +42,47 @@
             </div>
             <div id="merge" class="col s12">
                <div id="mergeError" class="error-banner"></div>
-               <form>
-                  <div class="file-field input-field">
-                     <div class="waves-effect btn">
-                        <span>File 1</span>
-                        <input type="file" id="file1Path">
+               <div class="row">
+                  <form>
+                     <div class="file-field input-field">
+                        <div class="waves-effect btn">
+                           <span>File 1</span>
+                           <input type="file" id="file1Path">
+                        </div>
+                        <div class="file-path-wrapper">
+                           <input class="file-path validate" type="text" placeholder="Upload start of merged PDF here.">
+                        </div>
                      </div>
-                     <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload start of merged PDF here.">
+                     <div class="file-field input-field">
+                        <div class="waves-effect btn">
+                           <span>File 2</span>
+                           <input type="file" id="file2Path">
+                        </div>
+                        <div class="file-path-wrapper">
+                           <input class="file-path validate" type="text" placeholder="Upload end of merged PDF here.">
+                        </div>
                      </div>
-                  </div>
-                  <div class="file-field input-field">
-                     <div class="waves-effect btn">
-                        <span>File 2</span>
-                        <input type="file" id="file2Path">
+                     <div class="row">
+                        <div class="col s5"></div>
+                        <div>
+                           <button id="mergeBtn" class="waves-effect btn col s2">Merge</button>
+                        </div>
+                        <div class="col s5"></div>
                      </div>
-                     <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload end of merged PDF here.">
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col s5"></div>
-                     <div>
-                        <button id="mergeBtn" class="waves-effect btn col s2">Merge</button>
-                     </div>
-                     <div class="col s5"></div>
-                  </div>
-               </form>
+                  </form>
+               </div>
             </div>
             <div id="about" class="col s12">
                <div class="error"></div>
                <div class="container">
                   <div class="row">
-                     <h4 class="center-align">About PDF-Split</h4>
+                     <h4 class="center-align">About PDF-Splitter</h4>
                      <p>
-                        PDF-Split is a simple GUI tool for splitting PDF files by page ranges and/or 
+                        PDF-Splitter is a simple GUI tool for splitting PDF files by page ranges and/or 
                         merging two PDF files together.
                      </p>
                      <p>
-                        Note: PDF-Split does not modify PDF files. All generated PDFs are copies of parts or wholes of inputted files.
+                        Note: PDF-Splitter does not modify PDF files. All generated PDFs are copies of parts or wholes of inputted files.
                      </p>
                   </div>
                </div>

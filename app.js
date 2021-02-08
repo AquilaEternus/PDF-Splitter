@@ -1,13 +1,13 @@
 const { app, BrowserWindow, ipcMain, Menu } = require('electron');
 
-// Set env
 process.env.NODE_ENV = 'production';
 
 const createWindow = () => {
-   //Create the browser window
    const win = new BrowserWindow({
       width: 800,
       height: 500,
+      minHeight: 500,
+      minWidth: 800,
       webPreferences: {
          nodeIntegration: true,
          devTools: false
@@ -25,7 +25,6 @@ ipcMain.on('get-downloads-path', (e) => {
 
 app.on('ready', createWindow);
 
-// Quit when all windows are closed.
 app.on('window-all-closed', () => {
    if (process.platform !== 'darwin') app.quit();
 });

@@ -48,7 +48,7 @@ function splitPdf(range, filePath) {
  * @param {String} file2Path 
  */
 function mergePdf(file1Path, file2Path) {
-    createLoader('merge');
+    createSpinner('merge');
     let milliSinceEpoch = new Date().valueOf()
     HandlePDF.mergePdfs(file1Path, file2Path)
         .then((result) => {
