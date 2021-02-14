@@ -1,5 +1,5 @@
 # PDF-Splitter
-PDF-Splitter is a simple desktop GUI tool for splitting PDF files by page ranges and/or merging two PDF files together. All resulting PDFs are copies from the original, therefore this program is not for modifying PDF files.
+PDF-Splitter is a simple desktop GUI tool written in Node/Electron js for splitting PDF files by page ranges and/or merging two PDF files together. All resulting PDFs are copies from the original, therefore this program is not for modifying PDF files.
 
 ##  Running within development environment / Node with Electron
 
